@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            background: lightcyan;
+        }
+        body{
+            background: yellow;
+            color: darkcyan;
+        }
+        h2{
+            color: blue;
+        }
+        .login{
+            background: blue;
+            font-weight: bold;
+            color: white;
+        }
+        .member{
+            background: gray;
+        }
+        /* class로 묶으면 .이름으로 호출해서 사용한다 */
+        /* class는 그룹으로 묶는거라고 생각하면 편하다 */
+        #find{
+            background: gold;
+            color: red;
+            font-style: italic;
+        }
+        /* id를 사용할 경우에는 #을 붙인다 */
+        /* 기본 선택자: 태그(태그명), 클래스(.클래스명), 아이디(#아이디명) */
+        #textbox{
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <h2>검색할 단어를 입력하세요.</h2>
+    <hr color="red">
+    검색할 단어 <input type="text">
+    <!--<input>은 꼭 type를 넣어줘야한다-->
+    <input type="submit" value="검색시작" id="find">
+    <!--입력된 단어를 서버에 제출할때는 submit을 사용한다.
+    button과 혼동하지 말것!!!!-->
+
+    <hr color="red">
+
+    <h2>로그인 화면</h2>
+    아이디 <input type="text" class="login"> <br>
+    패스워드 <input type="password" class="login"> <br>
+    <!-- 입력받는 글자를 암호화(안보이게)할려면 password를 사용하면 된다 -->
+    <input type="submit" value="로그인">
+
+    <hr color="red">
+
+    <h2>회원가입 화면</h2>
+    가입할 아이디 <input type="text" class="member"><br>
+    가입할 패스워드 <input type="password" class="member"><br>
+    가입할 이름 <input type="text" class="member"><br>
+    성별 <input type="radio" name="gender" checked> 남
+        <input type="radio" name="gender"> 여 <br>
+        <!-- radio는 라디오 버튼이다. 
+        checked를 넣으면 자동으로 선택되어진 상태로 보여지게 된다-->
+        <!-- 한개만 선택하는 방법은 name="gender"를 사용하면 된다 -->
+
+    결혼여부 <input type="radio" name="gender" checked> 기혼
+    <input type="radio" name="gender"> 미혼 <br>
+
+    취미
+    <input type="checkbox" checked>달리기
+    <input type="checkbox" checked>동영상보기
+    <input type="checkbox" checked>인터넷서핑
+    <br>
+    <!-- checkbox는 채크박스 버튼을 만든다-->
+    <!-- 일반적으로 radio버튼은 여러개중에 한개만을 선택할때 사용하고
+    check박스는 여러개를 선택할때 사용한다 -->
+
+    전화번호 통신사 <select>
+        <option>SKT</option>
+        <option>LGT</option>
+        <option>KT</option>
+        <option>알뜰폰</option>
+    </select>
+    <input type="number" placeholder="-는 빼고 적어주세요">
+    <!-- selected를 사용하면 선택된채로 나온다 -->
+    <!-- placeholder를 이용하면 투명글씨로 상자 안에 적을 수 있다 -->
+
+    <hr color="red">
+    하고 싶은 말<br>
+    <textarea cols="30" rows="5" placeholder="100글자 내외로 작성해주세요" id="textbox"></textarea>
+
+    <!-- textarea를 이용해 글자상자를 만들 수 있다
+    cols, rows를 이용해 크기를 조절할 수 있다 -->
+
+</body>
+</html>

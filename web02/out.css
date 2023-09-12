@@ -1,0 +1,7 @@
+body {
+    background: greenyellow;
+    color: palevioletred;
+}
+
+/* css에서 body{\++ }를 사용할 경우 해당 파일 안에 있는 body에 적용이 된다 */
+/* 외부파일에서 연결하는 경우는 모든 파일에 영향을 미친다 */

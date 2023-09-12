@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change {
+            color: blue;
+            text-align: center;
+        }
+
+        .changing {
+            background: pink;
+        }
+
+        .change_bg {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th width="100" style="background: greenyellow;">항목</th>
+            <th width="200" style="background: greenyellow;">입력</th>
+        </tr>
+        <tr>
+            <td class="change">번호</td>
+            <td class="change_bg"><input type="number" class="changing"></td>
+        </tr>
+        <tr>
+            <td class="change">제목</td>
+            <td class="change_bg"><input type="text" class="changing"></td>
+        </tr>
+        <tr>
+            <td class="change">내용</td>
+            <td class="change_bg"><input type="text" class="changing"></td>
+        </tr>
+        <tr>
+            <td class="change">작성자</td>
+            <td class="change_bg"><input type="text" class="changing"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="change_bg" align="center"><input type="button" value="글쓰기 완료."
+                style="color: green; background: white; font-weight: bold;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

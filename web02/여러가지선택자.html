@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            background: yellow;
+            width: 500px;
+            height: 100px;
+        }
+        #d2{
+            background: pink;
+        }
+        #d11{
+            background: red;
+        }
+        #d1 p {
+            color: aqua;
+        }
+        /* d1 안에 있는 <p> 태그를 사용하라는 뜻 */
+        #d2 > p {
+            color: aqua;
+        }
+        /* d2 안에 있는 <p> 태그만 바꾸라는 뜻 */
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <p>감자1</p>
+        <div id="d11">
+            <p>감자2</p>
+            <P>고구마</P>
+        </div>
+    </div>
+    <!-- <p>는 문단을 나눈때 사용 -->
+    <div id="d2">
+        <p>감자3</p>
+        <div id="d12">
+            <p>감자4</p>
+            <P>고구마</P>
+        </div>
+    </div>
+    <!-- <div>는 모듈과 비슷하다고 보면 된다.
+        id를 부여하고 안에 구조를 만드는 것이다. 
+        모듈처럼 다른곳에 이동시 안에 있는 것들이 모두 옴겨간다
+        <div>안에 <div>사용 가능하다! -->
+</body>
+</html>
