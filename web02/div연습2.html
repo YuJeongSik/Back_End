@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #total{
+            background: palevioletred;
+            width: 800px;
+            height: 800px;
+            text-align: center;
+        }
+        #top{
+            background: lightblue;
+            width: 800px;
+            height: 100px;
+            padding: 10px;
+        }
+        #top2{
+            background: black;
+            color: white;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border-radius: 100px 10px;
+            border: 20px dotted blue;
+            box-shadow: 10px 10px yellow;
+            /* position: fixed는 항상 화면에 보이게 하는 명령어이다 */
+            /* border에는 여러가지 기능을 사용할 수 있다! 잘 알아두기! */
+        }
+        #center{
+            background: lime;
+            padding: 30px;
+            width: 800px;
+            height: 700px;
+            /* padding은 모서리로부터 떨어지는 정도를 나타낸다 */
+            /* padding top 등 방향 정해서 할수도 있다! */
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            background: yellow;
+            /* border-radius: 50px; */
+            /* list-style을 사용해서 ul의 점들을 없앨수 있다 */
+            /* float를 이용해서 정렬 방법을 정할 수 있다 */
+            /* border는 모서리와 관련된 명령어이다 */
+        }
+        li:first-child{
+            border-radius: 50px 0 0 50px;
+        }
+        /* 첫번째 li */
+        li:last-child{
+            border-radius: 0 50px 50px 0;
+        }
+        /* 마지막 li */
+        li:nth-child(2n){
+            background: orange;
+        }
+        /* 짝수번째만 선택 */
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            background: blue;
+            color: aliceblue;
+        }
+        /* hover는 마우스를 올렸을때 해당 명령어를 실행 */
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="product.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="bbs.html">게시판</a>
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">장바구니 들어가는 부분</div>
+        <div id="center">사이트의 내용 들어가는 부분</div>
+    </div>
+</body>
+</html>
