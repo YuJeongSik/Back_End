@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let answer=prompt('당신은 어디로 가고싶나요?');
+
+        let result=' ';
+        let site=' ';
+        if(answer=='산'){
+            result='당신은 산을 선택하셨군요!! 한라산을 가볼까요?';
+            site='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%95%9C%EB%9D%BC%EC%82%B0&oquery=%EB%A1%9C%EC%8A%A4%ED%8A%B8%EC%95%84%ED%81%AC+%EC%9D%B8%EB%B2%A4&tqi=id6l%2BdprvTVssjZXNWVssssssfd-149979';
+        }
+        else if(answer=='바다'){
+            result='당신은 바다를 선택하셨군요!! 광안리로 가실까요?';
+            site='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EA%B4%91%EC%95%88%EB%A6%AC&oquery=%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4tv&tqi=id6D4lprvhGssUxnL%2FGssssstFC-514080';
+        }
+        else{
+            result='당신은 강을 선택하셨군요!! 한탄강으로 가볼까요?';
+            site='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%ED%95%9C%ED%83%84%EA%B0%95&oquery=%EA%B4%91%EC%95%88%EB%A6%AC&tqi=id6obsprvh8ssD2Ncs0ssssstro-397660';
+        }
+        alert(result);
+        location.href=site; 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

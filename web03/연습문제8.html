@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        id=prompt('id를 입력해주세요');
+        let result='';
+        let color='red';
+        if(id=='admin'){
+            result='브라우저에 관리자로 로그인이 되었습니다';
+            color='red';
+        }
+        else{
+            result='브라우저에 일반 유저로 로그인이 되었습니다';
+            color='blue';
+        }
+        document.write('<font color=' + color + '>' + result + '</font>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

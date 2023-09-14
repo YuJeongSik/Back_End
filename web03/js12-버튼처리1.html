@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            alert('더하기 기능 처리 할 예정.')
+        }
+        // funtion을 이용해 기능별로 처리할 부분을 나눈다
+        function minus(){
+            alert('빼기 기능 처리할 예정')
+        }
+        function login(){
+            alert('로그인 기능 처리할 예정')
+        }
+        // 내장된 기능이 아닌 것은 함수를 이용해 직접 만들어줘야한다
+    </script>
+</head>
+<body>
+    숫자1: <input type="text"><br>
+    숫자2: <input type="text"><br>
+    <button onclick="plus()">더하기 기능 처리</button>
+    <!-- onclick으로 버튼에 plus()와 연결시켜 기능을 추가.  -->
+    <button onclick="minus()">빼기 기능 처리</button>
+    <hr>
+    id : <input type="text"><br>
+    pw : <input type="text"><br>
+    <button onclick="login()">로그인</button>
+</body>
+</html>
