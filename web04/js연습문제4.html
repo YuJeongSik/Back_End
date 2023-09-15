@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay(){
+            let com_value = document.getElementById('com').value
+            let price_value = parseInt(document.getElementById('price').value)
+            let choice_value = document.getElementById('choice').value
+
+            let mid = 0
+            if(choice_value == 1){
+                mid = price_value
+            }else if(choice_value == 2){
+                mid = price_value + 1000
+            }else if(choice_value == 3){
+                mid = price_value + 500
+            }else{
+                alert('입력을 다시 해주세요.')
+            }
+
+            if(choice_value == 1 || choice_value == 2 || choice_value == 3){
+                let total = com_value + "에서 " + mid + "원을 " + choice_value + "번 수단으로 결제했습니다."
+                result.innerHTML = total
+            }
+        }
+    </script>
+</head>
+<body>
+    구매상점 : <input type="text" id="com"> <br>
+    결제금액 : <input type="text" id="price"> <br>
+    입력수단(1)계좌이체, (2)신용카드, (3)휴대폰결제 <br>
+    <input type="text" id="choice" placeholder="1,2,3중 하나만 입력해주세요."> <br>
+    <button onclick="pay()">결제하기</button>
+    <hr>
+    <div id="result" style="background: pink;"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay(){
+
+            let answer=0;
+
+            //let priceValue=document.getElementById('price').value;
+            //let muchValue=document.getElementById('much').value;
+
+            let intPrice=parseInt(document.getElementById('price').value);
+            let intMuch=parseInt(document.getElementById('much').value);
+
+            if(intPrice*intMuch < 20000){
+                answer=intPrice*intMuch;
+            }
+            else{
+                answer='소액결재만 가능합니다. 다시 입력해주세요!!!'
+            }
+            alert(answer);
+        }
+    </script>
+</head>
+<body>
+    하나당 가격: <input type="text" id="price"><br>
+    물건의 개수: <input type="text" id="much"><br>
+    <button onclick="pay()">결재하기</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function naver(){
+            let find=document.getElementById('naver').value;
+            location.href="https://kin.naver.com/search/list.naver?query="+find;
+        }
+        function web(){
+            let find2=document.getElementById('web').value;
+            location.href="https://comic.naver.com/search?keyword="+find2
+        }
+        function search(){
+            let find3=document.getElementById('search').value;
+            location.href="https://search.naver.com/search.naver?sm=tab_sug.top&where=nexearch&query="+find3
+        }
+        function movie(){
+            let find4=document.getElementById('movie').value;
+            location.href="https://tv.naver.com/search?query="+find4
+        }
+    </script>
+</head>
+<body>
+    지식인 검색어 <input type="text" id="naver">
+    <button style="background: lime;" onclick="naver()">네이버 지식인 검색</button>
+    <br>
+    웹툰 검색어 <input type="text" id="web">
+    <button style="background: yellow;" onclick="web()">네이버 웹툰 검색</button>
+    <br>
+    네이버 검색어 <input type="text" id="search">
+    <button style="background: lightgrey;" onclick="search()">네이버 검색어</button>
+    <br>
+    영화 검색어 <input type="text" id="movie">
+    <button style="background: pink;" onclick="movie()">영화 검색</button>
+    <br>
+    <hr>
+</body>
+</html>

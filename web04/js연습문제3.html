@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function food(){
+            let favor=document.getElementById('food1').value;
+            let unfavor=document.getElementById('food2').value;
+
+            output.innerHTML='오늘은 '+favor+'을 먹고, 내일은 '+unfavor+'을 먹겠어!'
+        }
+        function weather(){
+            let temp=document.getElementById('temp').value;
+            let day=document.getElementById('day').value;
+            let tempCheck=parseInt(temp);
+            let answer=''
+
+            if(tempCheck<=26&&tempCheck>=10){
+                answer='가을'
+            }
+            else if(tempCheck>26){
+                answer='여름'
+            }
+            else{
+                answer='겨울'
+            }
+
+            output.innerHTML='오늘은 '+day+'인데, '+answer+'이군!'//여기에 더 들어가야함
+        }
+    </script>
+</head>
+<body>
+    - 먹고 싶은 음식: <input type="text" id="food1"><br>
+    - 먹기 싫은 음식: <input type="text" id="food2"><br>
+    <button onclick="food()">뭐 먹지??</button>
+
+    <hr>
+    
+    - 오늘의 온도는: <input type="text" id="temp"><br>
+    - 오늘은 무슨 요일인가: <input type="text" id="day"><br>
+    <button onclick="weather()">날씨가 어떤가요?</button>
+
+    <hr>
+
+    <dev id="output"></dev>
+
+</body>
+</html>
