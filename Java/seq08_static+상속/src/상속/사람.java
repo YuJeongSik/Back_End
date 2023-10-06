@@ -1,0 +1,16 @@
+package 상속;
+
+public class 사람 {
+	double height;
+	int age;
+	
+	public void 걷다() {
+		System.out.println("걷고있는중.");
+	}
+	public void 먹다() {
+		System.out.println("맛있는 것을 먹다");
+	}
+	public void 자다() {
+		System.out.println("편안하게 자다");
+	}
+}
